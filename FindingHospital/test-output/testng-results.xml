@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="5" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-02-28T07:28:43Z" name="Default suite" finished-at="2021-02-28T07:30:57Z" duration-ms="133357">
+    <groups>
+    </groups>
+    <test started-at="2021-02-28T07:28:43Z" name="Default test" finished-at="2021-02-28T07:30:57Z" duration-ms="133357">
+      <class name="com.FindingHospital.testCases.Homepage">
+        <test-method is-config="true" signature="SetDriver()[pri:0, instance:com.FindingHospital.testCases.Homepage@3116c353]" started-at="2021-02-28T07:28:33Z" name="SetDriver" finished-at="2021-02-28T07:28:43Z" duration-ms="10645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetDriver -->
+        <test-method is-config="true" signature="SetProperty()[pri:0, instance:com.FindingHospital.testCases.Homepage@3116c353]" started-at="2021-02-28T07:28:43Z" name="SetProperty" finished-at="2021-02-28T07:28:43Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetProperty -->
+        <test-method signature="verifyHomePageTitle()[pri:0, instance:com.FindingHospital.testCases.Homepage@3116c353]" started-at="2021-02-28T07:28:43Z" name="verifyHomePageTitle" finished-at="2021-02-28T07:28:48Z" duration-ms="4875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method signature="city()[pri:2, instance:com.FindingHospital.testCases.Homepage@3116c353]" started-at="2021-02-28T07:28:48Z" name="city" finished-at="2021-02-28T07:28:49Z" duration-ms="854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- city -->
+        <test-method signature="searchhospital()[pri:3, instance:com.FindingHospital.testCases.Homepage@3116c353]" started-at="2021-02-28T07:28:49Z" name="searchhospital" finished-at="2021-02-28T07:28:53Z" duration-ms="4263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchhospital -->
+        <test-method signature="callHospitalSearch()[pri:4, instance:com.FindingHospital.testCases.Homepage@3116c353]" started-at="2021-02-28T07:28:53Z" name="callHospitalSearch" finished-at="2021-02-28T07:30:00Z" duration-ms="66300" status="FAIL">
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA['long org.apache.poi.util.IOUtils.copy(java.io.InputStream, java.io.OutputStream)']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: 'long org.apache.poi.util.IOUtils.copy(java.io.InputStream, java.io.OutputStream)'
+at org.apache.poi.openxml4j.opc.internal.marshallers.ZipPartMarshaller.marshall(ZipPartMarshaller.java:84)
+at org.apache.poi.openxml4j.opc.internal.MemoryPackagePart.save(MemoryPackagePart.java:112)
+at org.apache.poi.openxml4j.opc.internal.marshallers.DefaultMarshaller.marshall(DefaultMarshaller.java:43)
+at org.apache.poi.openxml4j.opc.ZipPackage.saveImpl(ZipPackage.java:539)
+at org.apache.poi.openxml4j.opc.OPCPackage.save(OPCPackage.java:1489)
+at org.apache.poi.ooxml.POIXMLDocument.write(POIXMLDocument.java:242)
+at com.FindingHospital.testCases.HospitalSearch.displayHospitalNames(HospitalSearch.java:145)
+at com.FindingHospital.testCases.Homepage.callHospitalSearch(Homepage.java:174)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- callHospitalSearch -->
+        <test-method signature="callDiagnosispage()[pri:5, instance:com.FindingHospital.testCases.Homepage@3116c353]" started-at="2021-02-28T07:30:00Z" name="callDiagnosispage" finished-at="2021-02-28T07:30:18Z" duration-ms="17996" status="FAIL">
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA['long org.apache.poi.util.IOUtils.copy(java.io.InputStream, java.io.OutputStream)']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: 'long org.apache.poi.util.IOUtils.copy(java.io.InputStream, java.io.OutputStream)'
+at org.apache.poi.openxml4j.opc.internal.marshallers.ZipPartMarshaller.marshall(ZipPartMarshaller.java:84)
+at org.apache.poi.openxml4j.opc.internal.MemoryPackagePart.save(MemoryPackagePart.java:112)
+at org.apache.poi.openxml4j.opc.internal.marshallers.DefaultMarshaller.marshall(DefaultMarshaller.java:43)
+at org.apache.poi.openxml4j.opc.ZipPackage.saveImpl(ZipPackage.java:539)
+at org.apache.poi.openxml4j.opc.OPCPackage.save(OPCPackage.java:1489)
+at org.apache.poi.ooxml.POIXMLDocument.write(POIXMLDocument.java:242)
+at com.FindingHospital.testCases.Diagnosispage.Top_cities(Diagnosispage.java:81)
+at com.FindingHospital.testCases.Homepage.callDiagnosispage(Homepage.java:195)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- callDiagnosispage -->
+        <test-method signature="callCorporateWellness()[pri:6, instance:com.FindingHospital.testCases.Homepage@3116c353]" started-at="2021-02-28T07:30:18Z" name="callCorporateWellness" finished-at="2021-02-28T07:30:55Z" duration-ms="37420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- callCorporateWellness -->
+        <test-method signature="CloseBrowser()[pri:7, instance:com.FindingHospital.testCases.Homepage@3116c353]" started-at="2021-02-28T07:30:55Z" name="CloseBrowser" finished-at="2021-02-28T07:30:57Z" duration-ms="1595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- com.FindingHospital.testCases.Homepage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
